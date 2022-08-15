@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../pages/login_page_view_model.dart';
+import '../pages//login/login_page_view_model.dart';
 
 class TopText extends StatelessWidget {
   // instantiating the object

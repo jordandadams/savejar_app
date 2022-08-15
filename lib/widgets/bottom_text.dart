@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../utils/constants.dart';
-import '../pages/login_page_view_model.dart';
+import '../pages/login/login_page_view_model.dart';
 
 class BottomText extends StatelessWidget {
   final Screens screen;

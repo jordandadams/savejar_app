@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:savejar_app/utils/constants.dart';
-import '../widgets/top_text.dart';
-import '../widgets/bottom_text.dart';
+import '../../widgets/top_text.dart';
+import '../../widgets/bottom_text.dart';
 
 enum Screens {
   createAccount,

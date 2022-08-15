@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import '../widgets/center_widget/center_widget.dart';
+import '../../widgets/center_widget/center_widget.dart';
 import 'login_page_view_model.dart';
 
 class LoginPage extends StatefulWidget {
