@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:savejar_app/utils/constants.dart';
 import '../widgets/top_text.dart';
+import '../widgets/bottom_text.dart';
 
 enum Screens {
   createAccount,
@@ -61,6 +62,65 @@ class LoginPageViewModel extends StatelessWidget {
     );
   }
 
+  Widget orDivider() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 130, vertical: 8),
+      child: Row(
+        children: [
+          Flexible(
+            child: Container(
+              height: 1,
+              color: loginPrimaryColor,
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'or',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            ),
+          ),
+          Flexible(
+            child: Container(
+              height: 1,
+              color: loginPrimaryColor,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget logos() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset('assets/images/google.png')
+        ],
+      ),
+    );
+  }
+
+  Widget forgotPassword() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 110),
+      child: TextButton(
+        onPressed: () {},
+        child: const Text('Forgot Password?',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+          color: loginSecondaryColor,
+        ),),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     const currentScreen = Screens.createAccount;
@@ -79,14 +139,30 @@ class LoginPageViewModel extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  inputField('Username', Icons.account_box),
-                  inputField('Email', Icons.mail),
-                  inputField('Password', Icons.key),
-                  loginButton('Sign Up'),
-                ],
+                children: currentScreen == Screens.createAccount
+                ? [
+                    inputField('Username', Icons.account_box),
+                    inputField('Email', Icons.mail),
+                    inputField('Password', Icons.key),
+                    loginButton('Sign Up'),
+                    orDivider(),
+                    logos(),
+                  ]
+                : [
+                    inputField('Email', Icons.mail),
+                    inputField('Password', Icons.key),
+                    loginButton('Sign Up'),
+                    forgotPassword(),
+                  ],
               ),
             ],
+          ),
+        ),
+        const Align(
+          alignment: Alignment.bottomCenter,
+          child: Padding(
+            padding: EdgeInsets.only(bottom: 50),
+            child: BottomText(screen: currentScreen),
           ),
         ),
       ],
