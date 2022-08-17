@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import '../../widgets/center_widget/center_widget.dart';
+import '/widgets/center_widget/center_widget.dart';
 import 'login_page_view_model.dart';
 
 class LoginPage extends StatefulWidget {
@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
             end: Alignment.bottomCenter,
             colors: [
               Color(0x007CBFCF),
-              Color(0xB316BFC4),
+              Color.fromARGB(255, 57, 181, 74),
             ],
           ),
         ),
@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
           begin: Alignment(0.6, -1.1),
           end: Alignment(0.7, 0.8),
           colors: [
-            Color(0xDB4BE8CC),
+            Color.fromARGB(255, 57, 181, 74),
             Color(0x005CDBCF),
           ],
         ),
@@ -56,6 +56,7 @@ class _LoginPageState extends State<LoginPage> {
     final screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned(

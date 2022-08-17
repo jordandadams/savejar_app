@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:savejar_app/pages//login/login_page.dart';
-import 'package:savejar_app/utils/constants.dart';
+import '/pages/login/login_page.dart';
+import '/utils/constants.dart';
 
 void main() {
   runApp(const MyApp());

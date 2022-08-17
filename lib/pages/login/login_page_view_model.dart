@@ -1,15 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:savejar_app/utils/constants.dart';
-import '../../widgets/top_text.dart';
-import '../../widgets/bottom_text.dart';
+import '/pages/login/animations/change_screen_animation.dart';
+import '/utils/constants.dart';
+import '../../utils/helper_functions.dart';
+import '/widgets/top_text.dart';
+import '/widgets/bottom_text.dart';
 
 enum Screens {
   createAccount,
   welcomeBack,
 }
 
-class LoginPageViewModel extends StatelessWidget {
+class LoginPageViewModel extends StatefulWidget {
   const LoginPageViewModel({Key? key}) : super(key: key);
+
+  @override
+  State<LoginPageViewModel> createState() => _LoginPageViewModelState();
+}
+
+class _LoginPageViewModelState extends State<LoginPageViewModel> with TickerProviderStateMixin {
+  late final List<Widget> createAccountContent;
+  late final List<Widget> loginContent;
 
   Widget inputField(String hint, IconData iconData) {
     return Padding(
@@ -122,15 +132,55 @@ class LoginPageViewModel extends StatelessWidget {
   }
 
   @override
+  void initState() {
+    createAccountContent = [
+      inputField('Username', Icons.account_box),
+      inputField('Email', Icons.mail),
+      inputField('Password', Icons.key),
+      loginButton('Sign Up'),
+      orDivider(),
+      logos(),
+    ];
+
+    loginContent = [
+      inputField('Email', Icons.mail),
+      inputField('Password', Icons.key),
+      loginButton('Sign Up'),
+      forgotPassword(),
+    ];
+
+    ChangeScreenAnimation.initalize(
+      vsync: this,
+      createAccountItems: createAccountContent.length,
+      loginItems: loginContent.length,
+    );
+
+    for (var i = 0; i < createAccountContent.length; i++) {
+      createAccountContent[i] = HelperFunctions.wrapWithAnimatedBuilder(
+        animation: ChangeScreenAnimation.createAccountAnimations[i],
+        child: createAccountContent[i],
+      );
+    }
+
+    for (var i = 0; i < loginContent.length; i++) {
+      loginContent[i] = HelperFunctions.wrapWithAnimatedBuilder(
+        animation: ChangeScreenAnimation.loginAnimations[i],
+        child: loginContent[i],
+      );
+    }
+
+    super.initState();
+  }
+  
+  @override
   Widget build(BuildContext context) {
-    const currentScreen = Screens.createAccount;
 
     return Stack(
       children: [
         const Positioned(
           top: 136,
           left: 24,
-          child: TopText(screen: currentScreen),
+          child: TopText(),
         ),
         Padding(
           padding: const EdgeInsets.only(top: 100),
@@ -139,21 +189,12 @@ class LoginPageViewModel extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: currentScreen == Screens.createAccount
-                ? [
-                    inputField('Username', Icons.account_box),
-                    inputField('Email', Icons.mail),
-                    inputField('Password', Icons.key),
-                    loginButton('Sign Up'),
-                    orDivider(),
-                    logos(),
-                  ]
-                : [
-                    inputField('Email', Icons.mail),
-                    inputField('Password', Icons.key),
-                    loginButton('Sign Up'),
-                    forgotPassword(),
-                  ],
+                children: createAccountContent,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: loginContent,
               ),
             ],
           ),
@@ -162,7 +203,7 @@ class LoginPageViewModel extends StatelessWidget {
           alignment: Alignment.bottomCenter,
           child: Padding(
             padding: EdgeInsets.only(bottom: 50),
-            child: BottomText(screen: currentScreen),
+            child: BottomText(),
           ),
         ),
       ],
