@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import '/pages/login/login_page.dart';
+import 'package:savejar_app/utils/router/savejar.router.dart';
+import 'package:stacked_services/stacked_services.dart';
 import '/utils/constants.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -22,7 +24,8 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Montserrat',
         ),
       ),
-      home: const LoginPage(),
+      navigatorKey: StackedService.navigatorKey,
+      onGenerateRoute: StackedRouter().onGenerateRoute,
     );
   }
 }

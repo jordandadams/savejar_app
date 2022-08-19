@@ -57,7 +57,7 @@ class _LoginPageViewModelState extends State<LoginPageViewModel> with TickerProv
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
           shape: const StadiumBorder(),
-          primary: loginSecondaryColor,
+          backgroundColor: loginSecondaryColor,
           elevation: 8,
           shadowColor: Colors.black87,
         ),
