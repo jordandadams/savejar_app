@@ -145,7 +145,7 @@ class _LoginPageViewModelState extends State<LoginPageViewModel> with TickerProv
     loginContent = [
       inputField('Email', Icons.mail),
       inputField('Password', Icons.key),
-      loginButton('Sign Up'),
+      loginButton('Sign In'),
       forgotPassword(),
     ];
 
