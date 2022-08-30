@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:savejar_app/utils/router/savejar.router.dart';
+import 'package:savejar_app/utils/router/savejar.locator.dart';
 import 'package:stacked_services/stacked_services.dart';
 import '/utils/constants.dart';
 
-Future main() async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  setupLocator();
+
   runApp(const MyApp());
 }
 
