@@ -6,13 +6,13 @@
 
 // ignore_for_file: public_member_api_docs
 
-import 'package:stacked_core/stacked_core.dart';
+import 'package:stacked/stacked.dart';
+import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 final locator = StackedLocator.instance;
 
-Future<void> setupLocator(
-    {String? environment, EnvironmentFilter? environmentFilter}) async {
+void setupLocator({String? environment, EnvironmentFilter? environmentFilter}) {
 // Register environments
   locator.registerEnvironment(
       environment: environment, environmentFilter: environmentFilter);

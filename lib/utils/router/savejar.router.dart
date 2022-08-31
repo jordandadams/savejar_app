@@ -4,11 +4,11 @@
 // StackedRouterGenerator
 // **************************************************************************
 
-// ignore_for_file: public_member_api_docs, unused_import, non_constant_identifier_names
+// ignore_for_file: public_member_api_docs
 
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:stacked_services/stacked_services.dart';
+import 'package:stacked/stacked_annotations.dart';
 
 import '../../pages/home/home_page.dart';
 import '../../pages/login/login_page.dart';
@@ -40,51 +40,10 @@ class StackedRouter extends RouterBase {
     },
     HomePage: (data) {
       return PageRouteBuilder<dynamic>(
-          pageBuilder: (context, animation, secondaryAnimation) =>
-              const HomePage(),
-          settings: data,
-          transitionsBuilder: data.transition ??
-              (context, animation, secondaryAnimation, child) {
-                return child;
-              });
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            const HomePage(),
+        settings: data,
+      );
     },
   };
-}
-
-/// ************************************************************************
-/// Extension for strongly typed navigation
-/// *************************************************************************
-
-extension NavigatorStateExtension on NavigationService {
-  Future<dynamic> navigateToLoginPage({
-    int? routerId,
-    bool preventDuplicates = true,
-    Map<String, String>? parameters,
-    Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
-        transition,
-  }) async {
-    return navigateTo(
-      Routes.loginPage,
-      id: routerId,
-      preventDuplicates: preventDuplicates,
-      parameters: parameters,
-      transition: transition,
-    );
-  }
-
-  Future<dynamic> navigateToHomePage({
-    int? routerId,
-    bool preventDuplicates = true,
-    Map<String, String>? parameters,
-    Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
-        transition,
-  }) async {
-    return navigateTo(
-      Routes.homePage,
-      id: routerId,
-      preventDuplicates: preventDuplicates,
-      parameters: parameters,
-      transition: transition,
-    );
-  }
 }
