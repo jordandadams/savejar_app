@@ -12,13 +12,16 @@ import 'package:stacked/stacked_annotations.dart';
 
 import '../../pages/home/home_page.dart';
 import '../../pages/login/login_page.dart';
+import '../../pages/onboarding/onboarding_page.dart';
 
 class Routes {
   static const String loginPage = '/';
   static const String homePage = '/home-page';
+  static const String onboardingPage = '/onboarding-page';
   static const all = <String>{
     loginPage,
     homePage,
+    onboardingPage,
   };
 }
 
@@ -28,6 +31,7 @@ class StackedRouter extends RouterBase {
   final _routes = <RouteDef>[
     RouteDef(Routes.loginPage, page: LoginPage),
     RouteDef(Routes.homePage, page: HomePage),
+    RouteDef(Routes.onboardingPage, page: OnboardingPage),
   ];
   @override
   Map<Type, StackedRouteFactory> get pagesMap => _pagesMap;
@@ -42,6 +46,13 @@ class StackedRouter extends RouterBase {
       return PageRouteBuilder<dynamic>(
         pageBuilder: (context, animation, secondaryAnimation) =>
             const HomePage(),
+        settings: data,
+      );
+    },
+    OnboardingPage: (data) {
+      return PageRouteBuilder<dynamic>(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            const OnboardingPage(),
         settings: data,
       );
     },

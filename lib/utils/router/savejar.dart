@@ -1,3 +1,4 @@
+import 'package:savejar_app/pages/onboarding/onboarding_page.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:savejar_app/pages/home/home_page.dart';
 import 'package:savejar_app/pages/login/login_page.dart';
@@ -12,6 +13,7 @@ import 'package:stacked_services/stacked_services.dart';
   routes: [
     MaterialRoute(page: LoginPage, initial: true),
     CustomRoute(page: HomePage),
+    CustomRoute(page: OnboardingPage),
   ],
   dependencies: [
     LazySingleton(classType: NavigationService),

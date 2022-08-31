@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="230px" height="46px" viewBox="0 0 230 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Field Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="48.8472934%" y1="-57.2635026%" x2="48.8472934%" y2="70.2881977%" id="linearGradient-1">
+            <stop stop-color="#FFBBED" offset="0%"></stop>
+            <stop stop-color="#976ED8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="BudgetPlannerApp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding---illustrations-2" transform="translate(-73.000000, -276.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="2" transform="translate(31.000000, 141.000000)">
+                <g id="hand-pork">
+                    <g id="Shape" transform="translate(42.000000, 0.000000)">
+                        <path d="M-3,180.274716 L-3,151.609349 C3.61905866,140.53645 12.8061674,135 24.5613262,135 C50.811366,135 52.7467753,167.200612 118.167653,162.815352 C183.588531,158.430093 183.588531,140.328634 210.376452,138.857645 C216.748955,138.507715 223.623471,138.998045 231,140.328634 L231,180.274716 L-3,180.274716 Z" id="Field-Copy"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
