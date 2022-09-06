@@ -11,9 +11,9 @@ import 'package:stacked_services/stacked_services.dart';
 
 @StackedApp(
   routes: [
-    MaterialRoute(page: LoginPage, initial: true),
+    MaterialRoute(page: OnboardingPage, initial: true),
+    CustomRoute(page: LoginPage),
     CustomRoute(page: HomePage),
-    CustomRoute(page: OnboardingPage),
   ],
   dependencies: [
     LazySingleton(classType: NavigationService),

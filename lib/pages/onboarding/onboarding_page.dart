@@ -31,7 +31,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 onLastPage = (index == 2);
               });
             },
-            children: [
+            children: const [
               IntroPageOne(),
               IntroPageTwo(),
               IntroPageThree(),
@@ -49,12 +49,18 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   onTap: () {
                     _controller.jumpToPage(2);
                   },
-                  child: const Text('SKIP'),
+                  child: const Text(
+                          'SKIP',
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                        ),
                 ),
                 // dot indicator
                 SmoothPageIndicator(
                   controller: _controller,
                   count: 3,
+                  effect: WormEffect(activeDotColor: Colors.white),
                 ),
                 // next or done
                 onLastPage
@@ -69,7 +75,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             ),
                           );
                         },
-                        child: const Text('DONE'),
+                        child: const Text(
+                          'DONE',
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                        ),
                       )
                     : GestureDetector(
                         onTap: () {
@@ -77,7 +88,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
                               duration: const Duration(milliseconds: 500),
                               curve: Curves.easeIn);
                         },
-                        child: const Text('NEXT'),
+                        child: const Text(
+                          'NEXT',
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                        ),
                       )
               ],
             ),
