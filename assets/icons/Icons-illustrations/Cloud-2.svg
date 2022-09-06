@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="25px" viewBox="0 0 139 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="62.809912%" y1="49.3055604%" x2="13.3242202%" y2="51.6174111%" id="linearGradient-1">
+            <stop stop-color="#9C9EFF" offset="0%"></stop>
+            <stop stop-color="#7A71EF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="BudgetPlannerApp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding---illustrations-2" transform="translate(-220.000000, -189.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="2" transform="translate(31.000000, 141.000000)">
+                <g id="hand-pork">
+                    <path d="M209.420364,70.5377682 C215.589652,69.2589846 220.397567,67.7053074 223.844107,65.8767366 C224.486112,63.1414252 226.018151,61.5086271 228.440224,60.9783423 C229.896774,60.6594474 231.303358,61.321268 232.659977,62.963804 C233.170434,58.616231 235.052454,55.9170095 238.306035,54.8661393 C241.559617,53.8152692 244.197608,54.4592387 246.220009,56.7980479 C249.250328,49.5395193 254.836818,46.7722913 262.979481,48.496364 C271.122143,50.2204367 275.992878,56.5273431 277.591685,67.4170832 L328,73 L189,73 C196.444287,72.6372958 203.251075,71.8165519 209.420364,70.5377682 Z" id="Cloud"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

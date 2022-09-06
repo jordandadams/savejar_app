@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="25px" viewBox="0 0 96 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="95.0817796%" y1="11.4038949%" x2="23.6365059%" y2="91.6685502%" id="linearGradient-1">
+            <stop stop-color="#F6ED9E" offset="0%"></stop>
+            <stop stop-color="#EFAD5F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="70.9022844%" y1="48.8861179%" x2="13.8218506%" y2="51.1138821%" id="linearGradient-2">
+            <stop stop-color="#98AAFF" offset="0%"></stop>
+            <stop stop-color="#938BEE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="BudgetPlannerApp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding---illustrations-2" transform="translate(-31.000000, -166.000000)" fill-rule="nonzero">
+            <g id="2" transform="translate(31.000000, 141.000000)">
+                <g id="hand-pork">
+                    <g id="Group-4" transform="translate(0.000000, 25.000000)">
+                        <circle id="circle-copy-5" fill="url(#linearGradient-1)" cx="32" cy="10" r="10"></circle>
+                        <path d="M12.1515323,21.6388189 C18.0725195,20.5088179 17.7953548,18.4163257 21.2754811,16.9648939 C23.5955652,15.9972727 25.8154604,16.4810833 27.9351666,18.4163257 C28.2617751,15.8551619 29.4659565,14.2650451 31.5477106,13.6459754 C33.6294648,13.0269057 35.3173431,13.4062694 36.6113456,14.7840666 C38.6860538,11.5946889 42.2743491,10 47.3762318,10 C50.2431628,10 53.3762738,12.3881115 56.7755648,17.1643344 C57.949919,15.5774892 60.450312,14.7840666 64.2767439,14.7840666 C67.8177356,14.7840666 70.1579805,16.2566256 71.2974787,19.2017436 C73.5707902,17.2237717 75.8267842,16.2347857 78.0654605,16.2347857 C82.414495,16.2347857 83.0635621,19.0360658 87.7572695,20.9551009 C89.0504403,21.4838174 91.7980171,22.2458536 96,23.2412096 L0,24.3286687 C4.15369678,23.2887695 8.20420756,22.3921529 12.1515323,21.6388189 Z" id="Cloud" fill="url(#linearGradient-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

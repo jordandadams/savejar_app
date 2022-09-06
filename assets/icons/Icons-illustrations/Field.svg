@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="222px" height="47px" viewBox="0 0 222 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Field</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="48.8472934%" y1="-23.0920643%" x2="48.8472934%" y2="82.5532559%" id="linearGradient-1">
+            <stop stop-color="#FB8ADD" offset="0%"></stop>
+            <stop stop-color="#8E70D4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="BudgetPlannerApp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding---illustrations-2" transform="translate(-76.000000, -295.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="2" transform="translate(31.000000, 141.000000)">
+                <g id="hand-pork">
+                    <g id="Shape" transform="translate(42.000000, 0.000000)">
+                        <path d="M0,200.073089 L0,173.896408 C13.3333333,166.107581 26.0350877,162.213168 38.1052632,162.213168 C56.2105263,162.213168 71.723102,175.485666 116,178.650433 C166,182.224269 186,154.081133 205,154.081133 C212.968898,154.081133 220.302231,158.618174 227,167.692256 L227,200.073089 L0,200.073089 Z" id="Field"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

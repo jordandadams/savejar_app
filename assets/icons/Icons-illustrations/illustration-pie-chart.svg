@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="14.4824867%" x2="13.3242202%" y2="99.9786078%" id="linearGradient-1">
+            <stop stop-color="#9CB5FF" offset="0%"></stop>
+            <stop stop-color="#7A71EF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.0712843,1.71443305 C10.884547,2.63720529 11.3352829,3.82227476 11.3400197,5.05264032 L11.3400197,5.0692351 C11.3400197,5.17699945 11.2967961,5.2739229 11.2267563,5.34394768 C11.1567166,5.41397245 11.0597724,5.45718677 10.951985,5.45718677 L6.2696998,5.45718677 C6.16191239,5.45718677 6.06496819,5.41397245 5.99492843,5.34394768 C5.92488867,5.2739229 5.88166511,5.17699945 5.88166511,5.0692351 L5.88166511,0.387951666 C5.88166511,0.280187314 5.92488867,0.183263861 5.99492843,0.113239086 C6.06496819,0.0432143109 6.16191239,-2.5313085e-14 6.2696998,-2.5313085e-14 C7.72447491,-2.5313085e-14 9.10771444,0.624687313 10.0712843,1.71443305 Z" id="path-2"></path>
+        <filter x="-458.0%" y="-238.2%" width="916.0%" height="916.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="12" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.819607843   0 0 0 0 0.831372549   0 0 0 0 0.88627451  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="BudgetPlannerApp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Onboarding---illustrations-3" transform="translate(-147.000000, -284.000000)" fill-rule="nonzero">
+            <g id="3" transform="translate(43.000000, 130.000000)">
+                <g id="Illustration">
+                    <g id="Phone" transform="translate(87.000000, 23.000000)">
+                        <g id="2" transform="translate(10.530018, 127.952841)">
+                            <g id="Group" transform="translate(6.480011, 3.239312)">
+                                <path d="M9.72001686,6.47862487 C9.72001686,7.81792668 9.17484128,9.03268798 8.29472968,9.91261128 C7.41461808,10.7925346 6.19959683,11.3375935 4.86000843,11.3375935 C3.52042003,11.3375935 2.30539878,10.7925346 1.42528718,9.91261128 C0.545175579,9.03268798 0,7.81792668 0,6.47862487 C0,5.13932307 0.545175579,3.92456177 1.42528718,3.04463847 C2.30539878,2.16471516 3.52042003,1.61965622 4.86000843,1.61965622 C4.96332493,1.61965622 5.05624799,1.66107805 5.12338257,1.72819827 C5.19051716,1.79531849 5.23194785,1.88822166 5.23194785,1.99151606 L5.23194785,6.10676503 L9.34807744,6.10676503 C9.45001639,6.10676503 9.54307916,6.14863956 9.61060626,6.21615221 C9.67813336,6.28366487 9.72001686,6.37670773 9.72001686,6.47862487 Z" id="Path" fill="#E9E8F7"></path>
+                                <g id="Path">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

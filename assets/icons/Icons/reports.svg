@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BudgetPlannerApp---roundedCorner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-237.000000, -1117.000000)" fill="#D8D8D8" fill-rule="nonzero">
+            <g id="Menu" transform="translate(0.000000, 1073.000000)">
+                <path d="M248.080307,45.7954015 L248.080307,56.8957014 L259.160613,56.8957014 C259.160613,63.0256581 254.198267,67.9960013 248.080307,67.9960013 C241.962346,67.9960013 237,63.0256581 237,56.8957014 C237,50.7657448 241.962346,45.7954015 248.080307,45.7954015 L248.080307,45.7954015 Z M249.919693,44 C256.037654,44 261,48.9703432 261,55.1002999 L261,55.1002999 L249.919693,55.1002999 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
