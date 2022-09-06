@@ -22,9 +22,9 @@ class HomePage extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: model.goBack,
+          onPressed: model.goForward,
           child: const Icon(
-            Icons.arrow_back
+            Icons.arrow_forward
           ),
         ),
       ),

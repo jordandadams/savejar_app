@@ -16,8 +16,8 @@ class HomePageViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  void goBack() {
-    _navigationService.navigateTo(Routes.loginPage);
+  void goForward() {
+    _navigationService.navigateTo(Routes.onboardingPage);
   }
 
 }
