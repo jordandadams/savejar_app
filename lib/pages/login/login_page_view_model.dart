@@ -6,9 +6,7 @@ import 'package:savejar_app/utils/router/savejar.locator.dart';
 class LoginPageViewModel extends BaseViewModel {
   final _navigationService = locator<NavigationService>();
 
-  String title = '';
-
-  void nav() {
-    _navigationService.navigateTo(Routes.homePage);
+  void navToCreateAccount() {
+    _navigationService.navigateTo(Routes.createAccountPage);
   }
 }

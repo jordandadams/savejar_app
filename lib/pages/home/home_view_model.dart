@@ -4,7 +4,7 @@ import 'package:stacked_services/stacked_services.dart';
 import 'package:savejar_app/utils/router/savejar.locator.dart';
 
 class HomePageViewModel extends BaseViewModel {
-  String _title = 'Home View';
+  final String _title = 'Home View';
   String get title => '$_title Counter: $counter';
   final _navigationService = locator<NavigationService>();
 

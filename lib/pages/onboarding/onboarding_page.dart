@@ -14,7 +14,7 @@ class OnboardingPage extends StatefulWidget {
 
 class _OnboardingPageState extends State<OnboardingPage> {
   // controller to keep track of which page we are on
-  PageController _controller = PageController();
+  final PageController _controller = PageController();
 
   // keep track if we are on last page
   bool onLastPage = false;

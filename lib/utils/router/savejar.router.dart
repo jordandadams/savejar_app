@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked/stacked_annotations.dart';
 
+import '../../pages/create_account/create_account_page.dart';
 import '../../pages/home/home_page.dart';
 import '../../pages/login/login_page.dart';
 import '../../pages/onboarding/onboarding_page.dart';
@@ -17,10 +18,12 @@ import '../../pages/onboarding/onboarding_page.dart';
 class Routes {
   static const String onboardingPage = '/';
   static const String loginPage = '/login-page';
+  static const String createAccountPage = '/create-account-page';
   static const String homePage = '/home-page';
   static const all = <String>{
     onboardingPage,
     loginPage,
+    createAccountPage,
     homePage,
   };
 }
@@ -31,6 +34,7 @@ class StackedRouter extends RouterBase {
   final _routes = <RouteDef>[
     RouteDef(Routes.onboardingPage, page: OnboardingPage),
     RouteDef(Routes.loginPage, page: LoginPage),
+    RouteDef(Routes.createAccountPage, page: CreateAccountPage),
     RouteDef(Routes.homePage, page: HomePage),
   ];
   @override
@@ -47,6 +51,15 @@ class StackedRouter extends RouterBase {
         pageBuilder: (context, animation, secondaryAnimation) =>
             const LoginPage(),
         settings: data,
+        transitionsBuilder: TransitionsBuilders.fadeIn,
+      );
+    },
+    CreateAccountPage: (data) {
+      return PageRouteBuilder<dynamic>(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            const CreateAccountPage(),
+        settings: data,
+        transitionsBuilder: TransitionsBuilders.fadeIn,
       );
     },
     HomePage: (data) {
@@ -54,6 +67,7 @@ class StackedRouter extends RouterBase {
         pageBuilder: (context, animation, secondaryAnimation) =>
             const HomePage(),
         settings: data,
+        transitionsBuilder: TransitionsBuilders.fadeIn,
       );
     },
   };
