@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 // Login Page Colors
-const loginBgColor = Color.fromARGB(255, 255, 255, 255);
+const loginBgColor = Colors.white;
+const TextStyle loginTxtStyle = TextStyle(fontSize: 22, color: Colors.white, height: 1.5, fontFamily: 'Karla');
 const loginPrimaryColor = Color.fromARGB(255, 0, 0, 0);
 const loginSecondaryColor = Color.fromARGB(255, 10, 129, 26);
 
