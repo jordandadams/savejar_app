@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:stacked/stacked.dart';
 import 'home_view_model.dart';
 
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: model.goForward,
+          onPressed: () => GoRouter.of(context).go('/onboarding'),
           child: const Icon(
             Icons.arrow_forward
           ),

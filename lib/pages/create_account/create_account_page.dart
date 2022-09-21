@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:savejar_app/utils/constants.dart';
 import 'package:savejar_app/widgets/login_screen/password_input_field.dart';
 import 'package:savejar_app/widgets/login_screen/rounded_button.dart';
@@ -48,37 +49,27 @@ class CreateAccountPage extends StatelessWidget {
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    const TextInputField(
+                  children: const [
+                    TextInputField(
                       hint: 'Email',
                       icon: Icons.mail,
                       inputType: TextInputType.emailAddress,
                       inputAction: TextInputAction.next,
                     ),
-                    const PasswordInputField(
+                    PasswordInputField(
                       icon: Icons.lock, 
                       hint: 'Password',
                       inputAction: TextInputAction.done,
                     ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
-                        child: Text(
-                          'Forgot Password?',
-                          style: loginTxtStyle,
-                        ),
-                      ),
+                    Gap(25),
+                    RoundedButton(
+                      buttonName: 'Create Account',
                     ),
-                    const Gap(25),
-                    const RoundedButton(
-                      buttonName: 'Login',
-                    ),
-                    const Gap(175),
+                    Gap(175),
                   ],
                 ),
                 GestureDetector(
-                  onTap: model.navToLogin,
+                  onTap: () => GoRouter.of(context).go('/login'),
                   child: Container(
                     child: const Text(
                       'Already Have An Account? Sign In!',

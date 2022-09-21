@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:savejar_app/pages/create_account/create_account_page.dart';
+import 'package:go_router/go_router.dart';
 import 'package:savejar_app/utils/constants.dart';
-import 'package:savejar_app/utils/router/savejar.router.dart';
 import 'package:savejar_app/widgets/login_screen/password_input_field.dart';
 import 'package:savejar_app/widgets/login_screen/rounded_button.dart';
 import 'package:savejar_app/widgets/login_screen/text_input_field.dart';
-import 'package:stacked_services/stacked_services.dart';
 import 'login_page_view_model.dart';
 import 'package:stacked/stacked.dart';
 import '../../widgets/login_screen/background-image.dart';
@@ -81,7 +79,7 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
                 GestureDetector(
-                  onTap: () => model.navToCreateAccount,
+                  onTap: () => GoRouter.of(context).go('/createaccount'),
                   child: Container(
                     child: const Text(
                       'Create New Account',
